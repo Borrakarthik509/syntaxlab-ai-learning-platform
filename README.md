@@ -12,6 +12,18 @@
   <b>Code Mastery, Accelerated.</b>
 </p>
 
+<p align="center">
+  <a href="https://borrakarthik509.github.io/syntaxlab-ai-learning-platform/">
+    <img src="https://img.shields.io/badge/Live_Demo-borrakarthik509.github.io-2EA44F?style=for-the-badge&logo=github&logoColor=white" alt="Live Demo" />
+  </a>
+</p>
+
+## 🔗 Live Demo
+
+**[https://borrakarthik509.github.io/syntaxlab-ai-learning-platform/](https://borrakarthik509.github.io/syntaxlab-ai-learning-platform/)**
+
+> Hosted on GitHub Pages. The deployed domain is registered in Firebase Authentication's authorized domains list, so login and signup work directly on the live site.
+
 ## 📸 Preview
 
 <details open>
@@ -45,7 +57,7 @@
 | **Icons & Charts** | Lucide Icons, Chart.js (Dashboard visualizations) |
 | **Authentication** | Firebase Auth (Email/Password, Custom Token, Anonymous) |
 | **Database** | Firebase Firestore (Two distinct projects) |
-| **Hosting target** | GitHub Pages / Firebase Hosting |
+| **Live Hosting** | [GitHub Pages](https://borrakarthik509.github.io/syntaxlab-ai-learning-platform/) |
 
 ## ✨ Features
 
@@ -165,6 +177,7 @@ SyntaxLab/
 The application strictly guards its private routes.
 - **Client-Side Protection**: `onAuthStateChanged` listeners inside `courses.js` and `dashboard.js` intercept unauthenticated users and immediately redirect them to `index.html`.
 - **Persistence**: Configured via `browserLocalPersistence` to maintain user sessions across browser reloads.
+- **Authorized Domain**: `borrakarthik509.github.io` is registered in Firebase Console → Authentication → Settings → Authorized domains, which is what allows the live demo above to authenticate successfully.
 - *Note: Firestore security rules are not included in this repository and are managed directly via the Firebase Console.*
 
 ## 🚀 Getting Started
@@ -193,10 +206,10 @@ The frontend comes pre-configured with the necessary API keys for both Firebase 
 
 ## 🌐 Deployment
 
-This application is designed to be hosted statically. It includes a `firebase.json` for Firebase Hosting but is also compatible with **GitHub Pages**.
+This application is live on **GitHub Pages** at [borrakarthik509.github.io/syntaxlab-ai-learning-platform](https://borrakarthik509.github.io/syntaxlab-ai-learning-platform/). It also includes a `firebase.json`, so it is compatible with Firebase Hosting as an alternative deploy target.
 
 **Crucial GitHub Pages Step:**
-If deploying to GitHub Pages, the target domain (e.g., `username.github.io`) **must** be added to the Firebase Console:
+If forking or redeploying this project to a different GitHub Pages domain, that new domain **must** be added to the Firebase Console:
 1. Go to Firebase Console -> Authentication -> Settings -> Authorized domains.
 2. Add your GitHub Pages domain.
 *(Why? Firebase Auth will automatically reject sign-in attempts from unrecognized origins to prevent credential hijacking).*
